@@ -1,73 +1,60 @@
-# Welcome to your Lovable project
+# 📰 Fake News Analyzer & Awareness Portal  
 
-## Project info
+An **interactive web-based platform** built with **Python (Flask)** and modern frontend tools to **detect fake news**, create awareness, and visualize statistics with engaging animations.  
 
-**URL**: https://lovable.dev/projects/7771d09b-121a-4272-8e56-7cd52eb27703
+---
 
-## How can I edit this code?
+## 🚀 Features  
 
-There are several ways of editing your application.
+✅ **News Detection** – Paste a headline or article and get a fake/real prediction with confidence scores.  
+✅ **Interactive Reports** – Pie charts and graphs showing fakeness vs correctness.  
+✅ **Animated Dashboard** – Recent fake news stories (default: Pakistan) with smooth animations.  
+✅ **Country Selector** – Choose any country to view its top circulating fake news.  
+✅ **Global & Local Stats** – Graphs of past fake news cases worldwide and in Pakistan.  
+✅ **Awareness Section** – Laws & punishments for spreading fake news with images/icons.  
+✅ **Responsive UI** – Works seamlessly on desktop and mobile with animations.  
 
-**Use Lovable**
+---
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/7771d09b-121a-4272-8e56-7cd52eb27703) and start prompting.
+## 🛠️ Tech Stack  
 
-Changes made via Lovable will be committed automatically to this repo.
+**Backend:**  
+- Python 3.x  
+- Flask  
+- Scikit-learn / NLTK (for fake news detection)  
+- Pandas, NumPy  
 
-**Use your preferred IDE**
+**Frontend:**  
+- HTML, CSS, JavaScript  
+- Bootstrap / TailwindCSS  
+- Plotly.js or Chart.js (graphs & reports)  
+- Anime.js / GSAP (animations)  
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+**Hosting (Optional):**  
+- Hugging Face Spaces (Gradio / Streamlit)  
+- Replit / Vercel / Local Flask Server  
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 📂 Project Structure  
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/7771d09b-121a-4272-8e56-7cd52eb27703) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+```bash
+Fake-News-Analyzer/
+│
+├── app.py                # Main Flask application
+├── requirements.txt      # Python dependencies
+├── static/               # Static files (CSS, JS, images)
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── templates/            # HTML templates (Jinja2)
+│   ├── index.html        # Home page with animated news
+│   ├── analyze.html      # News analysis page
+│   ├── laws.html         # Laws & punishments
+│   ├── stats.html        # Graphs for past fake news
+│   └── country.html      # Country-specific fake news
+├── models/               # ML model for fake news detection
+│   └── fake_news_model.pkl
+├── data/                 # Sample datasets
+│   └── fake_news.csv
+└── README.md             # Project documentation
